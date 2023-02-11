@@ -1,0 +1,18 @@
+2.W.A.J.P to read 10 integer values using Scanner class from keyboard. Generate the exception if
+the entered value is less than 10 and or greater than 40. Program should display appropriate message
+as and when this exception occurs otherwise it will display all the entered values.
+
+3. W.A.J.P to create a custom exception if Customer withdraw amount which is greater than account .balance then program will show custom exception otherwise amount will deduct from account balance.
+Account balance is:2000
+Enter withdraw amount:2500
+Sorry, insufficient balance, you need more 500 Rs.
+To perform this transaction.
+
+4.All the banks operating in India are controlled by RBI. RBI has set a well-defined guideline (e.g.
+minimum interest rate, minimum balance allowed, maximum withdrawal limit etc) which all banks
+must follow. For example, suppose RBI has set minimum interest rate applicable to a saving bank
+account to be 4% annually; however, banks are free to use 4% interest rate or to set any rates above
+it. Write a JAVA program to implement bank functionality in the above scenario and demonstrate the
+dynamic polymorphism concept. Note: Create few classes namely Customer, Account, RBI (Base
+Class) and few derived classes (SBI, ICICI, PNB etc). Assume and implement required member
+variables and functions in each class.
