@@ -1,0 +1,120 @@
+DDL => Data Definition Language
+1. create database
+
+//CREATE DATABASE databasenm;
+CREATE DATABASE acer;
+
+2. create table
+//CREATE TABLE TABLE_NAME(id int PRIMARY KEY AUTO_INCREMENT,countrynm varchar(255))
+
+CREATE TABLE details(id int PRIMARY KEY AUTO_INCREMENT,laptop_name varchar(255))
+
+
+3. add column
+// ALTER TABLE tablenm ADD columnnm datatype;
+ALTER TABLE details ADD laptop_price int;
+
+4.  particular column after column add
+// ALTER TABLE tablenm ADD columnnm datatype AFTER column; 
+ALTER TABLE details ADD laptop_description varchar(255) AFTER laptop_name; 
+
+5. datatyape change
+//ALTER TABLE tablenm MODIFY columnnm datatype;
+ALTER TABLE details MODIFY laptop_description int;
+
+
+6. Rename column
+//alter table TABLE_NAME CHANGE oldcolumnnm newcolumnnm varchar(255)
+alter table details CHANGE laptop_description laptop_rating int
+
+7. Remove column
+//ALTER TABLE TABLE_NAME drop columnnm;
+ALTER TABLE details drop laptop_rating;
+
+
+8. only data delete structure  
+//TRUNCATE TABLE country
+TRUNCATE TABLE models
+
+
+9. drop table
+//DROP TABLE state
+DROP TABLE information
+
+10. rename table
+//RENAME TABLE country TO coun
+RENAME TABLE details TO information
+
+DML=> Data Manipulation Language
+
+11. insert data
+//insert into tablename (database Field nm) values ('control value')
+insert into models (m_name,m_price) values ('Lenovo G5','25000')
+
+12. multiple value insert
+//INSERT INTO tablename (countrynm) VALUES('india'), ('pakistan')
+INSERT INTO models (m_name) VALUES('Dell'),('Acer')
+
+13. update data
+//update tablenm set databasefieldnm='controlvalue' where id='id'
+update models set m_price='50000' where id='2';
+update models set m_price='60000' where id='3';
+
+
+14. delete data
+//delete from tablenm where id='id'
+
+delete from models where id=4;
+delete from models where id=5;
+
+
+DQL => Data Query Language
+15. select all
+//select * from tablenm
+select *from models
+
+16. particular column dispaly
+//SELECT columnnm from tablenm
+SELECT m_name from models
+
+17. particular row display
+//select * from tablenm where id='id' 
+select * from models where id=2 
+
+19.order by
+//select colnm from tblnm order by colnm asc/desc
+select * from models order by m_price asc //if you 
+select m_price from models order by m_price asc
+
+*-multiple,asterik
+
+20.
+SELECT MIN(price) FROM product_info
+Agreegate Function:MAX,MIN,SUM,AVG
+
+
+
+18. join
+//select * from state join coun on state.cid=coun.cid
+
+INNER JOIN-JOIN -> SELECT * from sellers  JOIN models on sellers.id = models.id
+LEFT JOIN -> SELECT * from sellers LEFT JOIN models on sellers.id = models.id
+RIGHT JOIN-> SELECT * from sellers RIGHT JOIN models on sellers.id = models.id
+
+----------------------------Theory------------------------------
+19.commit:
+START TRANSACTION;
+
+//delete from register where uid=1;
+
+//commit;
+
+/*20.rollback:
+START TRANSACTION;*/
+
+/*delete from register where uid=1;
+
+rollback;*/
+----------------------------Theory------------------------------
+21.join:
+SELECT id  FROM cds INNER JOIN tops  ON cds.id = tops.id
