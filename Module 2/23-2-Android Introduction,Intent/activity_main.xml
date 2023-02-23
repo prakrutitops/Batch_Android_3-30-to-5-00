@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dimple"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shruti"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textColor="#FF9800"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt1"/>
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasmin"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#00BCD4"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt2"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nikunj"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#3F51B5"
+            android:textStyle="italic"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt3"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/a"
+            android:layout_below="@+id/txt4"/>
+
+
+
+</RelativeLayout>
+</ScrollView>
