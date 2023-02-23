@@ -1,0 +1,62 @@
+Android :Platform
+
+Android Studio Architecture
+
+Designing ->XML
+
+Coding->Kotlin
+
+Launching ->XML
+
+SDK->Software Development Kit
+============================================
+1)
+app
+
+manifest->launching
+
+java->coding
+package 1->
+package 2
+package 3
+
+res
+drawable->images
+layout->xml file
+mipmap->images[Inbuilt Images,Definition Add Images]
+values->string,colot,style
+xml->xml code
+
+
+============================================
+2)
+gradle scripts:
+->build.gradle(Project)->Plugins for Project
+->build.gradle(Module)->Plugin for Inidividual Model
+->proguard->Security 
+->gradle.properties->Property
+->local.properties->Property
+->settings.gradle->SDK Location
+
+
+Switching:
+
+Intent:Switching from One Activity to another Activity
+
+Types of Intent:
+1)explicit:Switching from One Activity to another Activity in same application
+2)implicit:Switching from One Activity to another Activity between diffrent application
+
+
+
+Task:
+
+Total 5 Products
+
+
+1)
+Product Name->Textview
+Product Image->Imageview->Welcome To My App New Prodcuts will coming soon[Activity-Textview]
+Product Price->Textview
+Order->Button->click -> Amazon Redirect[Implicit Intent]
+
