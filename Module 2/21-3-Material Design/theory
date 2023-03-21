@@ -1,0 +1,37 @@
+Activity:
+Fragment:Multiple Screens on One Activity
+
+1)Static Fragment : XML
+2)Dynamic Fragment :Kotlin
+
+4 Transactions
+1) A to A
+2) A to F
+3) F to A
+4) F to F
+
+=>Activity does not need any extra launcher
+=>Fragment needs a launcher to launch the screen ->Activity
+
+
+
+
+1)Activity
+activity_main.xml->Edittext->Enter Your Name  Button
+
+btn click event->Fragment
+
+2)
+Hello Name[Fragment]
+
+Click->
+
+3)
+Profile[Fragment]
+
+Your Name:
+Your Surname:
+Your Email:
+Your City:
+
+
