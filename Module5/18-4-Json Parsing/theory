@@ -1,0 +1,26 @@
+JSON Format
+[] ->JsonArray
+{} ->JsonObject
+
+
+1.
+[{},{},{}]
+
+2.
+[]
+
+3.
+{}
+
+4.
+{[{},{},{}]}
+
+5.{[{[]}])
+
+Parsing 
+
+Json Parsing
+JSON ->javascript object notation
+JSON ->data interchanging format
+
+
